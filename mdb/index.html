@@ -5,31 +5,746 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
+    <title>Broward.org Material Bootstrap</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 
-<body>
+<body class="hidden-sn grey-skin">
 
-    <!-- Start your project here-->
-    <div style="height: 100vh">
-        <div class="flex-center flex-column">
-            <h1 class="animated fadeIn mb-4">Material Design for Bootstrap</h1>
 
-            <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
 
-            <p class="animated fadeIn text-muted">MDB Team</p>
+    <!--Double navigation-->
+    <header>
+        <!-- Sidebar navigation -->
+        <ul id="slide-out" class="side-nav sn-bg-1 custom-scrollbar">
+            <!-- Logo -->
+            <li>
+                <div class="logo-wrapper waves-light">
+                    <a href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center"></a>
+                </div>
+            </li>
+            <!--/. Logo -->
+            <!--Social-->
+            <li>
+                <ul class="social">
+                    <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
+                    <li><a class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+                    <li><a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
+                    <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+                </ul>
+            </li>
+            <!--/Social-->
+            <!--Search Form-->
+            <li>
+                <form class="search-form" role="search">
+                    <div class="form-group waves-light">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+            </li>
+            <!--/.Search Form-->
+            <!-- Side navigation links -->
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i> Submit blog<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#" class="waves-effect">Submit listing</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">Registration form</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-hand-pointer-o"></i> Instruction<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#" class="waves-effect">For bloggers</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">For authors</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-eye"></i> About<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#" class="waves-effect">Introduction</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">Monthly meetings</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-envelope-o"></i> Contact me<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#" class="waves-effect">FAQ</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">Write a message</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <!--/. Side navigation links -->
+            <div class="sidenav-bg mask-strong"></div>
+        </ul>
+        <!--/. Sidebar navigation -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-toggleable-md navbar-expand-lg double-nav">
+            <!-- SideNav slide-out button -->
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+            </div>
+            <!-- Breadcrumb-->
+            <div class="breadcrumb-dn mr-auto">
+                <p>Material Design for Bootstrap</p>
+            </div>
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-comments-o"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Account</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </a>
+                    <div class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.Navbar -->
+
+    </header>
+    <!--/.Double navigation-->
+    <!-- Hero Image -->
+    <div class="hero">
+        <!-- <img class="img-responsive" src="https://unsplash.it/1600/900/?random" alt="You Are Broward" style="width:100%; height: auto;">-->
+    </div>
+    <!-- /.Hero Image -->
+
+    <!-- Fluid container to wrap the guts and become the #pageLayout in da Sharepoints-->
+    <div id="page-layout">
+        <!-- Quick Links section *TO BE REPLACED WITH EXISTING SP JQUERY PLUGIN*-->
+        <div class="text-center py-5">
+            <div class="container">
+                <h1 class="section-title">Quick Links</h1>
+                <div class="row">
+                    <div class="col-md-3">
+
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight">
+                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
+                                <a href="#">
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h5 class="card-title">Libraries</h5>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+
+
+
+                    </div>
+                    <div class="col-md-3">
+
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight">
+                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
+                                <a href="#">
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h5 class="card-title">Airport</h5>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+
+                    </div>
+                    <div class="col-md-3">
+
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight">
+                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
+                                <a href="#">
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h5 class="card-title">Records, Taxes & Treasury</h5>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <div class="col-md-3">
+
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight">
+                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
+                                <a href="#">
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h5 class="card-title">Transit</h5>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /Quick Links section-->
+        <!-- Services section-->
+        <div class="text-center py-5">
+            <div class="services container-fluid">
+                <div class="container">
+                    <h1 class="section-title services-title">Services</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+
+
+                            <div class="list-group services-group">
+                                <a href="#" class="list-group-item services-item"><i class="fa fa-thumbs-up svc-icon"></i>Cras justo odio
+  </a>
+                                <a href="#" class="list-group-item services-item"><i class="fa fa-plane svc-icon"></i>Dapibus ac facilisis in</a>
+                                <a href="#" class="list-group-item services-item"><i class="fa fa-ship svc-icon"></i>Morbi leo risus</a>
+                                <a href="#" class="list-group-item services-item"><i class="fa fa-taxi svc-icon"></i>Porta ac consectetur ac</a>
+                                <a href="#" class="list-group-item services-item"><i class="fa fa-ticket svc-icon"></i>Vestibulum at eros</a>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-6">
+
+
+                            <div class="list-group services-group">
+                                <a href="#" class="list-group-item services-item"><i class="fa fa-plane svc-icon"></i>Cras justo odio
+  </a>
+                                <a href="#" class="list-group-item services-item"><i class="fa fa-pie-chart svc-icon"></i>Dapibus ac facilisis in</a>
+                                <a href="#" class="list-group-item services-item"><i class="fa fa-usd svc-icon"></i>Morbi leo risus</a>
+                                <a href="#" class="list-group-item services-item"><i class="fa fa-wheelchair-alt svc-icon"></i>Porta ac consectetur ac</a>
+                                <a href="#" class="list-group-item services-item"><i class="fa fa-ambulance svc-icon"></i>Vestibulum at eros</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-9"></div>
+                        <div class="col-md-3 view-all">View All</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /Services section-->
+        <!-- News section-->
+        <div class="text-center py-5">
+            <div class="container">
+                <h1 class="section-title">News</h1>
+                <div class="row">
+                    <div class="col-md-3">
+
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight">
+                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
+                                <a href="#">
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h5 class="card-title">Headline Title</h5>
+                                <!--Text-->
+                                <p class="card-text">Mustache deep v laborum, bitters consequat vinyl pinterest air plant fanny pack shaman listicle... </p>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+
+
+
+                    </div>
+                    <div class="col-md-3">
+
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight">
+                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
+                                <a href="#">
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h5 class="card-title">Headline Title</h5>
+                                <!--Text-->
+                                <p class="card-text">Mustache deep v laborum, bitters consequat vinyl pinterest air plant fanny pack shaman listicle... </p>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+
+                    </div>
+                    <div class="col-md-3">
+
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight">
+                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
+                                <a href="#">
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h5 class="card-title">Headline Title</h5>
+                                <!--Text-->
+                                <p class="card-text">Mustache deep v laborum, bitters consequat vinyl pinterest air plant fanny pack shaman listicle... </p>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <div class="col-md-3">
+
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight">
+                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
+                                <a href="#">
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h5 class="card-title">Headline Title</h5>
+                                <!--Text-->
+                                <p class="card-text">Mustache deep v laborum, bitters consequat vinyl pinterest air plant fanny pack shaman listicle... </p>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /News section-->
+        <!-- Commission section-->
+        <div class="text-center py-5">
+            <div class="commisssion-title">
+                <div class="container">
+                    <h1 class="section-title">Broward Commission</h1>
+                </div>
+            </div>
+  
+                    <!--Panel-->
+                    <div class="col-md-6 card card-body">
+
+
+
+                        <h4 class="card-title">Panel title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="flex-row">
+                            <a class="card-link">Card link</a>
+                            <a class="card-link">Another link</a>
+
+                    <!--/.Panel-->
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-r">
+
+                    <div class="avatar">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1" alt="First sample avatar image">
+                    </div>
+                    <h4>Anna Deynah</h4>
+                    <h6 class="font-bold blue-text">Web Designer</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+
+                    <!--Facebook-->
+                    <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                    <!--Twitter-->
+                    <a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
+                    <!--Instagram-->
+                    <a class="icons-sm ins-ic"><i class="fa fa-instagram"> </i></a>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-r">
+
+                    <div class="avatar">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded-circle z-depth-1" alt="Second sample avatar image">
+                    </div>
+                    <h4>John Doe</h4>
+                    <h6 class="font-bold blue-text">Web Developer</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+
+                    <!--Linkedin-->
+                    <a class="icons-sm li-ic"><i class="fa fa-linkedin"> </i></a>
+                    <!--Facebook-->
+                    <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                    <!--Dribbble-->
+                    <a class="icons-sm dribbble-ic"><i class="fa fa-dribbble"> </i></a>
+
+                </div>
+            </div>
+            <!--Grid row-->
+            <div class="row text-left">
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-r">
+
+                    <div class="avatar">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1" alt="First sample avatar image">
+                    </div>
+                    <h4>Anna Deynah</h4>
+                    <h6 class="font-bold blue-text">Web Designer</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+
+                    <!--Facebook-->
+                    <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                    <!--Twitter-->
+                    <a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
+                    <!--Instagram-->
+                    <a class="icons-sm ins-ic"><i class="fa fa-instagram"> </i></a>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-r">
+
+                    <div class="avatar">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded-circle z-depth-1" alt="Second sample avatar image">
+                    </div>
+                    <h4>John Doe</h4>
+                    <h6 class="font-bold blue-text">Web Developer</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+
+                    <!--Linkedin-->
+                    <a class="icons-sm li-ic"><i class="fa fa-linkedin"> </i></a>
+                    <!--Facebook-->
+                    <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                    <!--Dribbble-->
+                    <a class="icons-sm dribbble-ic"><i class="fa fa-dribbble"> </i></a>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-r">
+
+                    <div class="avatar">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle z-depth-1" alt="Third sample avatar image">
+                    </div>
+                    <h4>Maria Kate</h4>
+                    <h6 class="font-bold blue-text">Photographer</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+
+                    <!--Facebook-->
+                    <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                    <!--Pinterest-->
+                    <a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
+                    <!--Email-->
+                    <a class="icons-sm email-ic"><i class="fa fa-envelope-o"> </i></a>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-r">
+
+                    <div class="avatar">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle z-depth-1" alt="Fourth sample avatar image">
+                    </div>
+                    <h4>Tom Williams</h4>
+                    <h6 class="font-bold blue-text">Front-end Developer</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+
+                    <!--Google +-->
+                    <a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a>
+                    <!--Facebook-->
+                    <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                    <!--GitHub-->
+                    <a class="icons-sm git-ic"><i class="fa fa-github"> </i></a>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+
+            <!--Grid row-->
+            <div class="row text-left">
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-r">
+
+                    <div class="avatar">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1" alt="First sample avatar image">
+                    </div>
+                    <h4>Anna Deynah</h4>
+                    <h6 class="font-bold blue-text">Web Designer</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+
+                    <!--Facebook-->
+                    <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                    <!--Twitter-->
+                    <a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
+                    <!--Instagram-->
+                    <a class="icons-sm ins-ic"><i class="fa fa-instagram"> </i></a>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-r">
+
+                    <div class="avatar">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded-circle z-depth-1" alt="Second sample avatar image">
+                    </div>
+                    <h4>John Doe</h4>
+                    <h6 class="font-bold blue-text">Web Developer</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+
+                    <!--Linkedin-->
+                    <a class="icons-sm li-ic"><i class="fa fa-linkedin"> </i></a>
+                    <!--Facebook-->
+                    <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                    <!--Dribbble-->
+                    <a class="icons-sm dribbble-ic"><i class="fa fa-dribbble"> </i></a>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-r">
+
+                    <div class="avatar">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle z-depth-1" alt="Third sample avatar image">
+                    </div>
+                    <h4>Maria Kate</h4>
+                    <h6 class="font-bold blue-text">Photographer</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+
+                    <!--Facebook-->
+                    <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                    <!--Pinterest-->
+                    <a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
+                    <!--Email-->
+                    <a class="icons-sm email-ic"><i class="fa fa-envelope-o"> </i></a>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-r">
+
+                    <div class="avatar">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle z-depth-1" alt="Fourth sample avatar image">
+                    </div>
+                    <h4>Tom Williams</h4>
+                    <h6 class="font-bold blue-text">Front-end Developer</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+
+                    <!--Google +-->
+                    <a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a>
+                    <!--Facebook-->
+                    <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                    <!--GitHub-->
+                    <a class="icons-sm git-ic"><i class="fa fa-github"> </i></a>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
         </div>
     </div>
-    <!-- /Start your project here-->
+    <!-- /Commission section-->
+    <!-- Videos section FYE-->
+    <div class="text-center py-5">
+        <div class="container">
+            <h1 class="section-title">Videos</h1>
+            <div class="row">
+                <div class="col-md-12">
 
+                    <img width="100%" src="https://unsplash.it/1600/900/?random" class="figure-img img-fluid" alt="...">
+                    <h4>Video Title</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+
+
+
+                    <img width="100%" src="https://unsplash.it/1600/900/?random" class="figure-img img-fluid" alt="...">
+                    <h5>Video Title</h5>
+
+                </div>
+                <div class="col-md-3">
+
+
+                    <img width="100%" src="https://unsplash.it/1600/900/?random" class="figure-img img-fluid" alt="...">
+                    <h5>Video Title</h5>
+
+                </div>
+                <div class="col-md-3">
+
+
+                    <img width="100%" src="https://unsplash.it/1600/900/?random" class="figure-img img-fluid" alt="...">
+
+                    <h5>Video Title</h5>
+
+                </div>
+                <div class="col-md-3">
+
+
+
+                    <img width="100%" src="https://unsplash.it/1600/900/?random" class="figure-img img-fluid" alt="...">
+                    <h5>Video Title</h5>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- /Videos section FYE-->
+    <!-- Big 'ol Footer section-->
+    </div>
+    <!-- /Fluid container to wrap the guts and become the #pageLayout in da Sharepoints-->
+    <!--Footer-->
+    <footer class="page-footer blue center-on-small-only">
+
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--First column-->
+                <div class="col-md-6">
+                    <h5 class="title">Footer Content</h5>
+                    <p>Here you can use rows and columns here to organize your footer content.</p>
+                </div>
+                <!--/.First column-->
+
+                <!--Second column-->
+                <div class="col-md-6">
+                    <h5 class="title">Links</h5>
+                    <ul>
+                        <li><a href="#!">Link 1</a></li>
+                        <li><a href="#!">Link 2</a></li>
+                        <li><a href="#!">Link 3</a></li>
+                        <li><a href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2017 Copyright: <a href="https://www.broward.org">Broward County Government</a>
+
+            </div>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
     <!-- SCRIPTS -->
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -39,6 +754,10 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+        // SideNav Initialization
+        $(".button-collapse").sideNav();
+    </script>
 </body>
 
 </html>
