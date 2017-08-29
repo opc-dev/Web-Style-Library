@@ -324,6 +324,20 @@ $grey: (
   "darken-4":   #212121
 );
 
+$bc-blue: (
+  "lighten-1":  #63CCFF,    
+  "base":     #006DB3,
+  "darken-1":   #0B3954
+);
+
+$bc-orange: (
+  "base":     #FF9505
+);
+
+$bc-yellow: (
+  "base":     #FFCC00
+);
+
 $shades: (
   "black":    #000000,
   "white":    #FFFFFF,
@@ -351,6 +365,9 @@ $colors: (
   "brown": $brown,
   "blue-grey": $blue-grey,
   "grey": $grey,
+  "bc-blue": $bc-blue,
+  "bc-orange": $bc-orange,
+  "bc-yellow": $bc-yellow,
   "shades": $shades
 );
 
@@ -498,22 +515,22 @@ $default-color-dark: #00695c !default;
   background-color: $default-color-dark!important;
 }
 
-$primary-color: #4285F4 !default;
+$primary-color: #006DB3 !default;
 .primary-color {
   background-color: $primary-color!important;
 }
 
-$primary-color-dark: #0d47a1 !default;
+$primary-color-dark: #0B3954 !default;
 .primary-color-dark {
   background-color: $primary-color-dark!important;
 }
 
-$secondary-color: #aa66cc !default;
+$secondary-color: #FFCC00 !default;
 .secondary-color {
   background-color: $secondary-color!important;
 }
 
-$secondary-color-dark: #9933CC !default;
+$secondary-color-dark: #FF9505 !default;
 .secondary-color-dark {
   background-color: $secondary-color-dark!important;
 }
@@ -935,7 +952,10 @@ $skin-colors: (
   "pink",
   "cyan",
   "navy-blue",
-  "deep-purple"
+  "deep-purple",
+  "bc-blue",
+  "bc-orange",
+  "bc-yellow"
 );
 
 $dropdown-colors: (
