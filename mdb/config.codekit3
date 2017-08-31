@@ -937,6 +937,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/salvattore.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/salvattore.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/License.pdf": {
 		"ft": 8192,
 		"oA": 2,
