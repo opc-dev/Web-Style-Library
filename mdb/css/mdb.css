@@ -879,30 +879,6 @@
 .grey.darken-4 {
   background-color: #212121 !important; }
 
-.bc-blue.lighten-1 {
-  background-color: #63CCFF !important; }
-
-.bc-blue {
-  background-color: #006DB3 !important; }
-
-.bc-blue-text {
-  color: #006DB3 !important; }
-
-.bc-blue.darken-1 {
-  background-color: #0B3954 !important; }
-
-.bc-orange {
-  background-color: #FF9505 !important; }
-
-.bc-orange-text {
-  color: #FF9505 !important; }
-
-.bc-yellow {
-  background-color: #FFCC00 !important; }
-
-.bc-yellow-text {
-  color: #FFCC00 !important; }
-
 .shades.black, .card .shades.card-review, .shades.picker__list-item:hover {
   background-color: #000000 !important; }
 
