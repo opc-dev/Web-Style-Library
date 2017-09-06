@@ -13760,4 +13760,18 @@ section .contact {
   section .contact i {
     color: #6b89a5; }
 
+.navbar {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px; }
+
+.list-group .list-group-item, .jumbotron, .author-box, .author-box, .navbar-toggler, .navbar, .badge {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px; }
+
 /*# sourceMappingURL=mdb.css.map */

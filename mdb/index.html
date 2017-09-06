@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Broward.org Material Bootstrap</title>
+    <title>Broward.org</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="hidden-sn">
+<body class="hidden-sn light-blue-skin">
 
 
 
@@ -29,8 +29,8 @@
         <ul id="slide-out" class="side-nav sn-bg-1 custom-scrollbar">
             <!-- Logo -->
             <li>
-                <div class="logo-wrapper waves-light">
-                    <a href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center"></a>
+                <div class="logo-wrapper waves-light" style="background:#0B3954">
+                    <a href="#"><img src="img/b-org-logo.png" class="img-fluid flex-center" alt="Broward.org Logo"></a>
                 </div>
             </li>
             <!--/. Logo -->
@@ -38,21 +38,10 @@
             <li>
                 <ul class="social">
                     <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
-                    <li><a class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
-                    <li><a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
                     <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
                 </ul>
             </li>
             <!--/Social-->
-            <!--Search Form-->
-            <li>
-                <form class="search-form" role="search">
-                    <div class="form-group waves-light">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                </form>
-            </li>
-            <!--/.Search Form-->
             <!-- Side navigation links -->
             <li>
                 <ul class="collapsible collapsible-accordion">
@@ -103,49 +92,51 @@
         </ul>
         <!--/. Sidebar navigation -->
         <!-- Navbar -->
-        <nav class="navbar navbar-toggleable-md navbar-expand-lg double-nav">
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav" style="background-color:#0b3954">
             <!-- SideNav slide-out button -->
             <div class="float-left">
-                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars broward-color-lightblue"></i></a>
             </div>
             <!-- Breadcrumb-->
-            <div class="breadcrumb-dn mr-auto">
-                <p>Material Design for Bootstrap</p>
+            <div class="mr-auto">
+                <img src="img/b-org-logo.png" height="50" style="padding-left:15px" alt="Broward.org Logo">
             </div>
-            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+            <ul class="nav navbar-nav nav-flex-icons ml-auto" style="padding-right:20px">
                 <li class="nav-item">
-                    <a class="nav-link"><i class="fa fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fa fa-comments-o"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Account</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                    <div class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                    <a class="nav-link"><i class="fa fa-sun-o"></i> <span class="clearfix d-none d-sm-inline-block">Visitors</span></a>
                 </li>
             </ul>
+            <!--Search Bar-->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#search"><i class="fa fa-search fa-2x broward-color-lightblue" aria-hidden="true"></i></a></li>
+            </ul>
+            <!--End Search Bar-->
         </nav>
         <!-- /.Navbar -->
+        <!--Search Overlay-->
+        <div id="search">
+            <!--  <button type="button" class="close">×</button>-->
 
+            <input type="search" value="" placeholder="Let's Search For..." />
+            <div class="text-center">
+                <button type="submit" class="btn btn-default btn-sm center-block"><i class="fa fa-arrow-right"></i></button>
+            </div>
+
+        </div>
+        <!--/End Search Overlay-->
+        <!--/.Double navigation-->
+        <!--Hero Image-->
+        <div class="view intro-2"></div>
+        <!--End Hero Image-->
+        <!--Emergency Banner-->
+        <div id="eBanner" class="eWrapper broward-color-orange">
+            <h3>Testing the Emergency Banner Testing the Emergency Banner Testing the Emergency Banner</h3>
+        </div>
+        <!--End Emergecy Banner-->
     </header>
-    <!--/.Double navigation-->
-    <!-- Hero Image -->
-    <div class="hero">
-        <!-- <img class="img-responsive" src="https://unsplash.it/1600/900/?random" alt="You Are Broward" style="width:100%; height: auto;">-->
-    </div>
-    <!-- /.Hero Image -->
 
     <!-- Fluid container to wrap the guts and become the #pageLayout in da Sharepoints-->
-    <main id="page-layout">
+    <div id="pagelayoutWrapper">
         <!-- Quick Links section *TO BE REPLACED WITH EXISTING SP JQUERY PLUGIN*-->
         <div class="text-center py-5">
             <div class="container">
@@ -717,7 +708,8 @@
             </div>
             <!-- /Videos section FYE-->
             <!-- Big 'ol Footer section-->
-    </main>
+    </div>
+    </div>
     <!-- /#pageLayout -->
     <!--Footer-->
     <footer class="page-footer center-on-small-only">
@@ -753,7 +745,8 @@
             <div class="container-fluid">
                 © 2017 Copyright: <a href="https://www.broward.org">Broward County Government</a>
 
-            </div>
+
+        </div>
         </div>
         <!--/.Copyright-->
     </footer>
@@ -768,9 +761,25 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <script type="text/javascript" src="js/salvattore.min.js"></script>
-    <script>
+    <script type="text/javascript">
         // SideNav Initialization
         $(".button-collapse").sideNav();
+        //Start Search Overlay Script
+        $(function() {
+            $('a[href="#search"]').on('click', function(event) {
+                event.preventDefault();
+                $('#search').addClass('open');
+                $('#search > form > input[type="search"]').focus();
+            });
+            $('#search, #search button.close').on('click keyup', function(event) {
+                if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+                    $(this).removeClass('open');
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        wow = new WOW().init();
     </script>
 </body>
 

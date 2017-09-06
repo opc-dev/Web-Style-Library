@@ -1,2 +1,11 @@
 // Your custom style
-$blue:    #006DB3;
+
+// Navbar
+// Remove rounded corners
+
+.navbar {
+    @include border-radius(0px);
+}
+.list-group .list-group-item, .jumbotron, .author-box, .navbar-toggler, .navbar, .badge {
+    @include border-radius(0px);
+}
