@@ -1,5 +1,6 @@
 // Your custom style
 
+<<<<<<< HEAD
 /* TYPOGRAPHY */
 
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Lato, Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -12,3 +13,14 @@ $theme-colors: (
   primary: $blue
 )
     
+=======
+// Navbar
+// Remove rounded corners
+
+.navbar {
+    @include border-radius(0px);
+}
+.list-group .list-group-item, .jumbotron, .author-box, .navbar-toggler, .navbar, .badge {
+    @include border-radius(0px);
+}
+>>>>>>> 534b686adffbc728cfdeecd3c6d165c4f2b59288

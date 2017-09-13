@@ -79,7 +79,7 @@
 }
 
 .classic-tabs {
-    @include flexbox()
+    @include flexbox();
     white-space: nowrap;
     overflow-x: auto;
     border-radius: 0.3rem 0.3rem 0 0;
