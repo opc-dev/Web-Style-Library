@@ -56,10 +56,6 @@ body {
     text-transform: uppercase;
 }
 
-.section-title {
-    
-}
-
 .services-title {
     color: #ffffff;
 }
@@ -90,17 +86,6 @@ h1,h2,h3,h4,h5,h6 {
     padding-bottom: 1vh;
     margin-bottom: 24px;
 }
-
-/* COLORS */
-
-.broward-color-lightblue {color:#63CCFF;}
-.broward-color-blue {color:#006DB3;}
-.broward-color-darkblue {color:#0B3954;}
-.broward-color-orange {color:#FF9505;}
-.broward-color-yellow {color:#FFCC00;}
-.broward-color-lightgrey {color:#EEEEEE;}
-.broward-color-grey {color:#BCBCBC;}
-
 
 /* SALVATTORE */
 

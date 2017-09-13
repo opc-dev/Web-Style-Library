@@ -1,2 +1,14 @@
 // Your custom style
-$blue:    #006DB3 !default;
+
+/* TYPOGRAPHY */
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Lato, Roboto, "Helvetica Neue", Arial, sans-serif;
+
+/* COLORS */
+
+$blue: #006DB3;
+
+$theme-colors: (
+  primary: $blue
+)
+    

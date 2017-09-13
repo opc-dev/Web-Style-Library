@@ -324,20 +324,6 @@ $grey: (
   "darken-4":   #212121
 );
 
-$bc-blue: (
-  "lighten-1":  #63CCFF,    
-  "base":     #006DB3,
-  "darken-1":   #0B3954
-);
-
-$bc-orange: (
-  "base":     #FF9505
-);
-
-$bc-yellow: (
-  "base":     #FFCC00
-);
-
 $shades: (
   "black":    #000000,
   "white":    #FFFFFF,
@@ -365,9 +351,6 @@ $colors: (
   "brown": $brown,
   "blue-grey": $blue-grey,
   "grey": $grey,
-  "bc-blue": $bc-blue,
-  "bc-orange": $bc-orange,
-  "bc-yellow": $bc-yellow,
   "shades": $shades
 );
 
@@ -952,10 +935,7 @@ $skin-colors: (
   "pink",
   "cyan",
   "navy-blue",
-  "deep-purple",
-  "bc-blue",
-  "bc-orange",
-  "bc-yellow"
+  "deep-purple"
 );
 
 $dropdown-colors: (
