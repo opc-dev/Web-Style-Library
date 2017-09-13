@@ -101,21 +101,21 @@
             <div class="mr-auto">
                 <img src="img/b-org-logo.png" height="50" style="padding-left:15px" alt="Broward.org Logo">
             </div>
-            <ul class="nav navbar-nav nav-flex-icons ml-auto" style="padding-right:20px">
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fa fa-sun-o"></i> <span class="clearfix d-none d-sm-inline-block">Visitors</span></a>
-                </li>
-            </ul>
             <!--Search Bar-->
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#search"><i class="fa fa-search fa-2x broward-color-lightblue" aria-hidden="true"></i></a></li>
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-cog"></i></a>
+                </li>
+                <li>
+                    <a href="#search" class="nav-link"><i class="fa fa-search fa-lg broward-color-lightblue" aria-hidden="true"></i></a>
+                </li>
             </ul>
             <!--End Search Bar-->
         </nav>
         <!-- /.Navbar -->
         <!--Search Overlay-->
         <div id="search">
-            <!--  <button type="button" class="close">×</button>-->
+            <!--<button type="button" class="close">×</button>-->
 
             <input type="search" value="" placeholder="Let's Search For..." />
             <div class="text-center">
@@ -708,7 +708,7 @@
             </div>
             <!-- /Videos section FYE-->
             <!-- Big 'ol Footer section-->
-    </div>
+        </div>
     </div>
     <!-- /#pageLayout -->
     <!--Footer-->
@@ -746,7 +746,7 @@
                 © 2017 Copyright: <a href="https://www.broward.org">Broward County Government</a>
 
 
-        </div>
+            </div>
         </div>
         <!--/.Copyright-->
     </footer>
@@ -760,7 +760,13 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Wow JS for MDB -->
+    <script type="text/javascript">
+        wow = new WOW().init();
+    </script>
+    <!-- Salvattore Responsive Masonry Layout -->
     <script type="text/javascript" src="js/salvattore.min.js"></script>
+    <!-- SideNav Functionality -->
     <script type="text/javascript">
         // SideNav Initialization
         $(".button-collapse").sideNav();
@@ -768,18 +774,20 @@
         $(function() {
             $('a[href="#search"]').on('click', function(event) {
                 event.preventDefault();
-                $('#search').addClass('open');
+                $('#search').toggleClass('open');
                 $('#search > form > input[type="search"]').focus();
+                $('#search').click(function() {
+                    $('#search-icon').toggle('1000');
+                    $("i", this).toggleClass("fa-search fa-times");
+                });
             });
-            $('#search, #search button.close').on('click keyup', function(event) {
+            
+            /* $('#search, #search button.close').on('click keyup', function(event) {
                 if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
                     $(this).removeClass('open');
                 }
-            });
+            }); */
         });
-    </script>
-    <script type="text/javascript">
-        wow = new WOW().init();
     </script>
 </body>
 
