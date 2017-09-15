@@ -222,3 +222,18 @@ h1,h2,h3,h4,h5,h6 {
 .pagelayoutWrapper{
   padding-top: 20px;
 }
+
+/* Options Dropdown */
+.menu-options {
+  float: right;
+}
+#options-menu {
+  float: right;
+}
+.options-list {
+    margin-right: 8px;
+}
+.options-list-item {
+    list-style: none;
+    display: inline;
+}

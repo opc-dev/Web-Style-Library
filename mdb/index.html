@@ -19,11 +19,8 @@
 
 </head>
 
-<<<<<<< HEAD
-<body class="hidden-sn">
-=======
-<body class="hidden-sn light-blue-skin">
->>>>>>> 534b686adffbc728cfdeecd3c6d165c4f2b59288
+<body id="broward" class="hidden-sn light-blue-skin">
+
 
 
 
@@ -98,22 +95,34 @@
         <!-- Navbar -->
         <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav" style="background-color:#0b3954">
             <!-- SideNav slide-out button -->
-            <div class="float-left">
+            <div class="pull-sm-left">
                 <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars broward-color-lightblue"></i></a>
             </div>
-            <!-- Breadcrumb-->
-            <div class="mr-auto">
-                <img src="img/b-org-logo.png" height="50" style="padding-left:15px" alt="Broward.org Logo">
+            <!-- Logo -->
+            <div class="navbar-logo mx-auto pt-2">
+                <img src="img/b-org-logo.png" width="180px" style="padding-left:15px;" alt="Broward.org Logo">
             </div>
             <!--Search Bar-->
-            <ul class="nav navbar-nav nav-flex-icons ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fa fa-cog"></i></a>
-                </li>
-                <li>
-                    <a href="#search" class="nav-link"><i class="fa fa-search fa-lg broward-color-lightblue" aria-hidden="true"></i></a>
-                </li>
-            </ul>
+            <div id="search-bar">
+                <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                    <li>
+                        <a href="#search" class="nav-link"><i class="fa fa-search fa-lg px-2" aria-hidden="true"></i></a>
+                    </li>
+
+
+                    <li id="options-menu-content" class="menu-options d-none">
+                        <ul class="options-list ">
+                            <li class="options-list-item px-1"><a href="#"><span style="font-size:smaller">A</span>A<span style="font-size:larger">A</span></a></li>
+                            <li class="options-list-item px-1"><a href="#">Contrast</a></li>
+                            <li class="options-list-item px-1"><a href="#">Translate</a></li>
+                        </ul>
+                    </li>
+                    <li id="options-menu">
+                        <a href="#" class="nav-link"><i id="site-options" class="fa fa-cog fa-lg px-2" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+
             <!--End Search Bar-->
         </nav>
         <!-- /.Navbar -->
@@ -122,9 +131,10 @@
             <!--<button type="button" class="close">×</button>-->
 
             <input type="search" value="" placeholder="Let's Search For..." />
+            <!--
             <div class="text-center">
                 <button type="submit" class="btn btn-default btn-sm center-block"><i class="fa fa-arrow-right"></i></button>
-            </div>
+            </div> -->
 
         </div>
         <!--/End Search Overlay-->
@@ -428,7 +438,7 @@
                 </div>
 
 
-                                
+
                 <!-- Salvattore test section -->
                 <div class="row">
                     <div class="container">
@@ -643,23 +653,17 @@
                                         <div class="mask"></div>
                                     </a>
                                 </div>
-                                <!--/.Card image-->
-                                <!--Card content-->
                                 <div class="card-body">
-                                    <!--Title-->
                                     <h4 class="card-title text-left">Dale V.C. Holness</h4>
                                     <hr>
-                                    <!--Text-->
                                     <p class="card-text text-left">District 9</p>
                                     <a href="#" class="black-text d-flex flex-row-reverse">
                                         <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
                                         <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
                                     </a>
                                 </div>
-                                <!--/.Card content-->
                             </div>
                             <!--/.Card Light-->
->>>>>>> 534b686adffbc728cfdeecd3c6d165c4f2b59288
                         </div>
                     </div>
                 </div>
@@ -769,6 +773,7 @@
     <!-- Wow JS for MDB -->
     <script type="text/javascript">
         wow = new WOW().init();
+
     </script>
     <!-- Salvattore Responsive Masonry Layout -->
     <script type="text/javascript" src="js/salvattore.min.js"></script>
@@ -787,13 +792,28 @@
                     $("i", this).toggleClass("fa-search fa-times");
                 });
             });
-            
+
             /* $('#search, #search button.close').on('click keyup', function(event) {
                 if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
                     $(this).removeClass('open');
                 }
             }); */
         });
+
+    </script>
+    <!-- Search icon toggle -->
+    <script type="text/javascript">
+        $('#search-bar ul li a').click(function() {
+            $(this).find('i').toggleClass('fa-search fa-times')
+        });
+
+    </script>
+    <!-- Options Menu -->
+    <script type="text/javascript">
+        $('#site-options').click(function() {
+            $('#options-menu-content').toggleClass('d-none')
+        });
+
     </script>
 </body>
 
