@@ -65,6 +65,12 @@
 		"oF": 2,
 		"oS": 3
 		},
+	"\/css\/mdb.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/css\/mdb.css.map",
+		"oF": 0
+		},
 	"\/css\/mdb.min.css": {
 		"aP": 1,
 		"bl": 0,

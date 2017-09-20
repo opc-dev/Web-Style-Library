@@ -56,9 +56,6 @@ body {
     text-transform: uppercase;
 }
 
-.section-title {
-    
-}
 
 .services-title {
     color: #ffffff;
@@ -104,7 +101,13 @@ h1,h2,h3,h4,h5,h6 {
 
 /* SALVATTORE */
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 360px){
+	#grid[data-columns]::before {
+		content: '1 .column.size-1of1';
+	}
+}
+
+@media screen and (min-width: 361px) and (max-width: 767px){
 	#grid[data-columns]::before {
 		content: '2 .column.size-1of2';
 	}
@@ -127,3 +130,4 @@ h1,h2,h3,h4,h5,h6 {
 .size-1of2 { width: 50%; }
 .size-1of3 { width: 33.333%; }
 .size-1of4 { width: 25%; }
+
