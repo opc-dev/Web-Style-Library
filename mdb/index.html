@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Broward.org</title>
+    <title>Broward.org Material Bootstrap</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -19,8 +19,7 @@
 
 </head>
 
-<body id="broward" class="hidden-sn light-blue-skin">
-
+<body class="hidden-sn">
 
 
 
@@ -30,8 +29,8 @@
         <ul id="slide-out" class="side-nav sn-bg-1 custom-scrollbar">
             <!-- Logo -->
             <li>
-                <div class="logo-wrapper waves-light" style="background:#0B3954">
-                    <a href="#"><img src="img/b-org-logo.png" class="img-fluid flex-center" alt="Broward.org Logo"></a>
+                <div class="logo-wrapper waves-light">
+                    <a href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center"></a>
                 </div>
             </li>
             <!--/. Logo -->
@@ -39,10 +38,21 @@
             <li>
                 <ul class="social">
                     <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
+                    <li><a class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+                    <li><a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
                     <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
                 </ul>
             </li>
             <!--/Social-->
+            <!--Search Form-->
+            <li>
+                <form class="search-form" role="search">
+                    <div class="form-group waves-light">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+            </li>
+            <!--/.Search Form-->
             <!-- Side navigation links -->
             <li>
                 <ul class="collapsible collapsible-accordion">
@@ -93,64 +103,49 @@
         </ul>
         <!--/. Sidebar navigation -->
         <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav" style="background-color:#0b3954">
+        <nav class="navbar navbar-toggleable-md navbar-expand-lg double-nav">
             <!-- SideNav slide-out button -->
-            <div class="pull-sm-left">
-                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars broward-color-lightblue"></i></a>
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
             </div>
-            <!-- Logo -->
-            <div class="navbar-logo mx-auto pt-2">
-                <img src="img/b-org-logo.png" width="180px" style="padding-left:15px;" alt="Broward.org Logo">
+            <!-- Breadcrumb-->
+            <div class="breadcrumb-dn mr-auto">
+                <p>Material Design for Bootstrap</p>
             </div>
-            <!--Search Bar-->
-            <div id="search-bar">
-                <ul class="nav navbar-nav nav-flex-icons ml-auto">
-                    <li>
-                        <a href="#search" class="nav-link"><i class="fa fa-search fa-lg px-2" aria-hidden="true"></i></a>
-                    </li>
-
-
-                    <li id="options-menu-content" class="menu-options d-none">
-                        <ul class="options-list ">
-                            <li class="options-list-item px-1"><a href="#"><span style="font-size:smaller">A</span>A<span style="font-size:larger">A</span></a></li>
-                            <li class="options-list-item px-1"><a href="#">Contrast</a></li>
-                            <li class="options-list-item px-1"><a href="#">Translate</a></li>
-                        </ul>
-                    </li>
-                    <li id="options-menu">
-                        <a href="#" class="nav-link"><i id="site-options" class="fa fa-cog fa-lg px-2" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
-            </div>
-
-            <!--End Search Bar-->
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-comments-o"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Account</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </a>
+                    <div class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
         </nav>
         <!-- /.Navbar -->
-        <!--Search Overlay-->
-        <div id="search">
-            <!--<button type="button" class="close">×</button>-->
 
-            <input type="search" value="" placeholder="Let's Search For..." />
-            <!--
-            <div class="text-center">
-                <button type="submit" class="btn btn-default btn-sm center-block"><i class="fa fa-arrow-right"></i></button>
-            </div> -->
-
-        </div>
-        <!--/End Search Overlay-->
-        <!--/.Double navigation-->
-        <!--Hero Image-->
-        <div class="view intro-2"></div>
-        <!--End Hero Image-->
-        <!--Emergency Banner-->
-        <div id="eBanner" class="eWrapper broward-color-orange">
-            <h3>Testing the Emergency Banner Testing the Emergency Banner Testing the Emergency Banner</h3>
-        </div>
-        <!--End Emergecy Banner-->
     </header>
+    <!--/.Double navigation-->
+    <!-- Hero Image -->
+    <div class="hero">
+        <!-- <img class="img-responsive" src="https://unsplash.it/1600/900/?random" alt="You Are Broward" style="width:100%; height: auto;">-->
+    </div>
+    <!-- /.Hero Image -->
 
     <!-- Fluid container to wrap the guts and become the #pageLayout in da Sharepoints-->
-    <div id="pagelayoutWrapper">
+    <main id="page-layout">
         <!-- Quick Links section *TO BE REPLACED WITH EXISTING SP JQUERY PLUGIN*-->
         <div class="text-center py-5">
             <div class="container">
@@ -423,303 +418,313 @@
         </div>
         <!-- /News section-->
         <!-- Commission section-->
-        <div class="text-center py-5">
-            <div class="commisssion-title">
-                <div class="container">
-                    <h1 class="section-title">Broward Commission</h1>
-                </div>
-            </div>
+
+        <div class="commisssion-title">
             <div class="container">
-
-                <div class="row text-left">
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-12 mx-auto mb-r">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-
-
-
-                <!-- Salvattore test section -->
-                <div class="row">
-                    <div class="container">
-                        <div id="grid" data-columns>
-                            <!--Card Light-->
-                            <div class="card testimonial-card mx-2 mb-3 pt-2">
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight avatar">
-                                    <img src="http://www.broward.org/Commission/District8/PublishingImages/Commissioner-Sharief.jpg" class="img-fluid" alt="">
-                                    <a>
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-                                <!--Card content-->
-                                <div class="card-body">
-
-                                    <!--Title-->
-                                    <h4 class="card-title text-left">Barbara Sharief</h4>
-                                    <hr>
-                                    <!--Text-->
-                                    <p class="card-text text-left">District 8</p>
-                                    <a href="#" class="black-text d-flex flex-row-reverse">
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
-                                    </a>
-                                </div>
-                                <!--/.Card content-->
-                            </div>
-                            <!--/.Card Light-->
-                            <!--Card Light-->
-                            <div class="card testimonial-card mx-2 mb-3 pt-2">
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight avatar">
-                                    <img src="http://www.broward.org/Commission/District7/PublishingImages/TimHeadshot450px.jpg" class="img-fluid" alt="">
-                                    <a>
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-                                <!--Card content-->
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h4 class="card-title text-left">Tim Ryan</h4>
-                                    <hr>
-                                    <!--Text-->
-                                    <p class="card-text text-left">District 7</p>
-                                    <a href="#" class="black-text d-flex flex-row-reverse">
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
-                                    </a>
-                                </div>
-                                <!--/.Card content-->
-                            </div>
-                            <!--/.Card Light-->
-                            <!--Card Light-->
-                            <div class="card testimonial-card mx-2 mb-3 pt-2">
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight avatar">
-                                    <img src="http://www.broward.org/Commission/District1/PublishingImages/Nan%20H%20Rich.jpg" class="img-fluid" alt="">
-                                    <a>
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-                                <!--Card content-->
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h4 class="card-title text-left">Nan H. Rich</h4>
-                                    <hr>
-                                    <!--Text-->
-                                    <p class="card-text text-left">District 1</p>
-                                    <a href="#" class="black-text d-flex flex-row-reverse">
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
-                                    </a>
-                                </div>
-                                <!--/.Card content-->
-                            </div>
-                            <!--/.Card Light-->
-                            <!--Card Light-->
-                            <div class="card testimonial-card mx-2 mb-3 pt-2">
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight avatar">
-                                    <img src="http://www.broward.org/Commission/District2/PublishingImages/MarkDBogen.jpg" class="img-fluid" alt="">
-                                    <a>
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-                                <!--Card content-->
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h4 class="card-title text-left">Mark D. Bogen</h4>
-                                    <hr>
-                                    <!--Text-->
-                                    <p class="card-text text-left">District 2</p>
-                                    <a href="#" class="black-text d-flex flex-row-reverse">
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
-                                    </a>
-                                </div>
-                                <!--/.Card content-->
-                            </div>
-                            <!--/.Card Light-->
-                            <!--Card Light-->
-                            <div class="card testimonial-card mx-2 mb-3 pt-2">
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight avatar">
-                                    <img src="http://www.broward.org/Commission/District3/PublishingImages/MUdine200.jpg" class="img-fluid" alt="">
-                                    <a>
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-                                <!--Card content-->
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h4 class="card-title text-left">Michael Udine</h4>
-                                    <hr>
-                                    <!--Text-->
-                                    <p class="card-text text-left">District 3</p>
-                                    <a href="#" class="black-text d-flex flex-row-reverse">
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
-                                    </a>
-                                </div>
-                                <!--/.Card content-->
-                            </div>
-                            <!--/.Card Light-->
-                            <!--Card Light-->
-                            <div class="card testimonial-card mx-2 mb-3 pt-2">
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight avatar">
-                                    <img src="http://www.broward.org/Commission/District4/PublishingImages/Chip-LaMarca-Headshot.jpg" class="img-fluid" alt="">
-                                    <a>
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-                                <!--Card content-->
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h4 class="card-title text-left">Chip LaMarca</h4>
-                                    <hr>
-                                    <!--Text-->
-                                    <p class="card-text text-left">District 4</p>
-                                    <a href="#" class="black-text d-flex flex-row-reverse">
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
-                                    </a>
-                                </div>
-                                <!--/.Card content-->
-                            </div>
-                            <!--/.Card Light-->
-                            <!--Card Light-->
-                            <div class="card testimonial-card mx-2 mb-3 pt-2">
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight avatar">
-                                    <img src="http://www.broward.org/Commission/District5/PublishingImages/SteveGeller-DkBlue.jpg" class="img-fluid" alt="">
-                                    <a>
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-                                <!--Card content-->
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h4 class="card-title text-left">Steve Geller</h4>
-                                    <hr>
-                                    <!--Text-->
-                                    <p class="card-text text-left">District 5</p>
-                                    <a href="#" class="black-text d-flex flex-row-reverse">
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
-                                    </a>
-                                </div>
-                                <!--/.Card content-->
-                            </div>
-                            <!--/.Card Light-->
-                            <!--Card Light-->
-                            <div class="card testimonial-card mx-2 mb-3 pt-2">
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight avatar">
-                                    <img src="http://www.broward.org/Commission/District6/PublishingImages/BeamFurr_Banner.jpg" class="img-fluid" alt="">
-                                    <a>
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-                                <!--Card content-->
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h4 class="card-title text-left">Beam Furr</h4>
-                                    <hr>
-                                    <!--Text-->
-                                    <p class="card-text text-left">District 6</p>
-                                    <a href="#" class="black-text d-flex flex-row-reverse">
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
-                                    </a>
-                                </div>
-                                <!--/.Card content-->
-                            </div>
-                            <!--/.Card Light-->
-                            <!--Card Light-->
-                            <div class="card testimonial-card mx-2 mb-3 pt-2">
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight avatar">
-                                    <img src="http://www.broward.org/Commission/District9/PublishingImages/DaleHolnessPortrait.jpg" class="img-fluid" alt="">
-                                    <a>
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title text-left">Dale V.C. Holness</h4>
-                                    <hr>
-                                    <p class="card-text text-left">District 9</p>
-                                    <a href="#" class="black-text d-flex flex-row-reverse">
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
-                                        <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--/.Card Light-->
-                        </div>
-                    </div>
-                </div>
+                <h1 class="section-title">Broward Commission</h1>
             </div>
-            <!-- /Salvattore test section -->
-            <!-- Videos section FYE-->
-            <div class="text-center py-5">
-                <div class="container">
-                    <h1 class="section-title">Videos</h1>
-                    <div class="row">
-                        <div class="col-md-12">
-
-                            <img width="100%" src="https://unsplash.it/1600/900/?random" class="figure-img img-fluid" alt="...">
-                            <h4>Video Title</h4>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-
-
-
-                            <img width="100%" src="https://unsplash.it/1600/900/?random" class="figure-img img-fluid" alt="...">
-                            <h5>Video Title</h5>
-
-                        </div>
-                        <div class="col-md-3">
-
-
-                            <img width="100%" src="https://unsplash.it/1600/900/?random" class="figure-img img-fluid" alt="...">
-                            <h5>Video Title</h5>
-
-                        </div>
-                        <div class="col-md-3">
-
-
-                            <img width="100%" src="https://unsplash.it/1600/900/?random" class="figure-img img-fluid" alt="...">
-
-                            <h5>Video Title</h5>
-
-                        </div>
-                        <div class="col-md-3">
-
-
-
-                            <img width="100%" src="https://unsplash.it/1600/900/?random" class="figure-img img-fluid" alt="...">
-                            <h5>Video Title</h5>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- /Videos section FYE-->
-            <!-- Big 'ol Footer section-->
         </div>
-    </div>
+        <div class="container">
+
+            <div class="row px-3">
+                <div class="col-lg-6 col-md-4 col-sm-12 col-12 mx-0 mb-r px-3">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+
+                <!--Card Light-->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-2">
+                    <div class="card testimonial-card mx-0 mb-3 pt-2 px-1">
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight avatar">
+                            <img src="http://www.broward.org/Commission/District8/PublishingImages/Commissioner-Sharief.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title text-left">Barbara Sharief</h4>
+                            <hr>
+                            <!--Text-->
+                            <p class="card-text text-left">District 8</p>
+                            <a href="#" class="black-text d-flex flex-row-reverse">
+                                <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
+                                <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
+                            </a>
+                        </div>
+                        <!--/.Card content-->
+                    </div>
+                </div>
+                <!--/.Card Light-->
+                <!--Card Light-->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-2">
+                    <div class="card testimonial-card mx-0 mb-3 pt-2 px-1">
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight avatar">
+                            <img src="http://www.broward.org/Commission/District7/PublishingImages/TimHeadshot450px.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h4 class="card-title text-left">Tim Ryan</h4>
+                            <hr>
+                            <!--Text-->
+                            <p class="card-text text-left">District 7</p>
+                            <a href="#" class="black-text d-flex flex-row-reverse">
+                                <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
+                                <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
+                            </a>
+                        </div>
+                        <!--/.Card content-->
+                    </div>
+                </div>
+                <!--/.Card Light-->
+            </div>
+
+
+            <!-- /Commission section-->
+            <!-- Salvattore test section -->
+            <div class="row">
+                <div class="container">
+                    <div id="grid" data-columns>
+                        <!--Card Light-->
+                        <div class="card testimonial-card mx-2 mb-3 pt-2">
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight avatar">
+                                <img src="http://www.broward.org/Commission/District1/PublishingImages/Nan%20H%20Rich.jpg" class="img-fluid" alt="">
+                                <a>
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+                            <!--/.Card image-->
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title text-left">Nan H. Rich</h4>
+                                <hr>
+                                <!--Text-->
+                                <p class="card-text text-left">District 1</p>
+                                <a href="#" class="black-text d-flex flex-row-reverse">
+                                    <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
+                                    <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
+                                </a>
+                            </div>
+                            <!--/.Card content-->
+                        </div>
+                        <!--/.Card Light-->
+                        <!--Card Light-->
+                        <div class="card testimonial-card mx-2 mb-3 pt-2">
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight avatar">
+                                <img src="http://www.broward.org/Commission/District2/PublishingImages/MarkDBogen.jpg" class="img-fluid" alt="">
+                                <a>
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+                            <!--/.Card image-->
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title text-left">Mark D. Bogen</h4>
+                                <hr>
+                                <!--Text-->
+                                <p class="card-text text-left">District 2</p>
+                                <a href="#" class="black-text d-flex flex-row-reverse">
+                                    <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
+                                    <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
+                                </a>
+                            </div>
+                            <!--/.Card content-->
+                        </div>
+                        <!--/.Card Light-->
+                        <!--Card Light-->
+                        <div class="card testimonial-card mx-2 mb-3 pt-2">
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight avatar">
+                                <img src="http://www.broward.org/Commission/District3/PublishingImages/MUdine200.jpg" class="img-fluid" alt="">
+                                <a>
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+                            <!--/.Card image-->
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title text-left">Michael Udine</h4>
+                                <hr>
+                                <!--Text-->
+                                <p class="card-text text-left">District 3</p>
+                                <a href="#" class="black-text d-flex flex-row-reverse">
+                                    <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
+                                    <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
+                                </a>
+                            </div>
+                            <!--/.Card content-->
+                        </div>
+                        <!--/.Card Light-->
+                        <!--Card Light-->
+                        <div class="card testimonial-card mx-2 mb-3 pt-2">
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight avatar">
+                                <img src="http://www.broward.org/Commission/District4/PublishingImages/Chip-LaMarca-Headshot.jpg" class="img-fluid" alt="">
+                                <a>
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+                            <!--/.Card image-->
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title text-left">Chip LaMarca</h4>
+                                <hr>
+                                <!--Text-->
+                                <p class="card-text text-left">District 4</p>
+                                <a href="#" class="black-text d-flex flex-row-reverse">
+                                    <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
+                                    <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
+                                </a>
+                            </div>
+                            <!--/.Card content-->
+                        </div>
+                        <!--/.Card Light-->
+                        <!--Card Light-->
+                        <div class="card testimonial-card mx-2 mb-3 pt-2">
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight avatar">
+                                <img src="http://www.broward.org/Commission/District5/PublishingImages/SteveGeller-DkBlue.jpg" class="img-fluid" alt="">
+                                <a>
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+                            <!--/.Card image-->
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title text-left">Steve Geller</h4>
+                                <hr>
+                                <!--Text-->
+                                <p class="card-text text-left">District 5</p>
+                                <a href="#" class="black-text d-flex flex-row-reverse">
+                                    <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
+                                    <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
+                                </a>
+                            </div>
+                            <!--/.Card content-->
+                        </div>
+                        <!--/.Card Light-->
+                        <!--Card Light-->
+                        <div class="card testimonial-card mx-2 mb-3 pt-2">
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight avatar">
+                                <img src="http://www.broward.org/Commission/District6/PublishingImages/BeamFurr_Banner.jpg" class="img-fluid" alt="">
+                                <a>
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+                            <!--/.Card image-->
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title text-left">Beam Furr</h4>
+                                <hr>
+                                <!--Text-->
+                                <p class="card-text text-left">District 6</p>
+                                <a href="#" class="black-text d-flex flex-row-reverse">
+                                    <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
+                                    <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
+                                </a>
+                            </div>
+                            <!--/.Card content-->
+                        </div>
+                        <!--/.Card Light-->
+                        <!--Card Light-->
+                        <div class="card testimonial-card mx-2 mb-3 pt-2">
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight avatar">
+                                <img src="http://www.broward.org/Commission/District9/PublishingImages/DaleHolnessPortrait.jpg" class="img-fluid" alt="">
+                                <a>
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+                            <!--/.Card image-->
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title text-left">Dale V.C. Holness</h4>
+                                <hr>
+                                <!--Text-->
+                                <p class="card-text text-left">District 9</p>
+                                <a href="#" class="black-text d-flex flex-row-reverse">
+                                    <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-map-marker"></i>&nbsp;MAP</h5>
+                                    <h5 class="waves-effect p-2 broward-color-blue mb-0"><i class="fa fa-info-circle"></i>&nbsp;INFO</h5>
+                                </a>
+                            </div>
+                            <!--/.Card content-->
+                        </div>
+                        <!--/.Card Light-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Salvattore test section -->
+
+        <!-- Videos section FYE-->
+        <div class="text-center py-5">
+            <div class="container">
+                <h1 class="section-title">Videos</h1>
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <img width="100%" src="https://unsplash.it/1600/900/?random" class="figure-img img-fluid" alt="...">
+                        <h4>Video Title</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+
+
+
+                        <img width="100%" src="https://unsplash.it/1600/900/?random" class="figure-img img-fluid" alt="...">
+                        <h5>Video Title</h5>
+
+                    </div>
+                    <div class="col-md-3">
+
+
+                        <img width="100%" src="https://unsplash.it/1600/900/?random" class="figure-img img-fluid" alt="...">
+                        <h5>Video Title</h5>
+
+                    </div>
+                    <div class="col-md-3">
+
+
+                        <img width="100%" src="https://unsplash.it/1600/900/?random" class="figure-img img-fluid" alt="...">
+
+                        <h5>Video Title</h5>
+
+                    </div>
+                    <div class="col-md-3">
+
+
+
+                        <img width="100%" src="https://unsplash.it/1600/900/?random" class="figure-img img-fluid" alt="...">
+                        <h5>Video Title</h5>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /Videos section FYE-->
+        <!-- Big 'ol Footer section-->
+    </main>
     <!-- /#pageLayout -->
     <!--Footer-->
     <footer class="page-footer center-on-small-only">
@@ -755,7 +760,6 @@
             <div class="container-fluid">
                 © 2017 Copyright: <a href="https://www.broward.org">Broward County Government</a>
 
-
             </div>
         </div>
         <!--/.Copyright-->
@@ -770,50 +774,11 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Wow JS for MDB -->
-    <script type="text/javascript">
-        wow = new WOW().init();
-
-    </script>
-    <!-- Salvattore Responsive Masonry Layout -->
+    <!-- Salvattore JavaScript -->
     <script type="text/javascript" src="js/salvattore.min.js"></script>
-    <!-- SideNav Functionality -->
-    <script type="text/javascript">
+    <script>
         // SideNav Initialization
         $(".button-collapse").sideNav();
-        //Start Search Overlay Script
-        $(function() {
-            $('a[href="#search"]').on('click', function(event) {
-                event.preventDefault();
-                $('#search').toggleClass('open');
-                $('#search > form > input[type="search"]').focus();
-                $('#search').click(function() {
-                    $('#search-icon').toggle('1000');
-                    $("i", this).toggleClass("fa-search fa-times");
-                });
-            });
-
-            /* $('#search, #search button.close').on('click keyup', function(event) {
-                if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
-                    $(this).removeClass('open');
-                }
-            }); */
-        });
-
-    </script>
-    <!-- Search icon toggle -->
-    <script type="text/javascript">
-        $('#search-bar ul li a').click(function() {
-            $(this).find('i').toggleClass('fa-search fa-times')
-        });
-
-    </script>
-    <!-- Options Menu -->
-    <script type="text/javascript">
-        $('#site-options').click(function() {
-            $('#options-menu-content').toggleClass('d-none')
-        });
-
     </script>
 </body>
 
